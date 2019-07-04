@@ -1,0 +1,38 @@
+/*** TYPOGRAPHY ***/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+}
+
+h3 {
+  font-size: 1.7rem !important;
+}
+
+h4 {
+  font-size: 1.5rem !important;
+}
+
+h5 {
+  font-size: 1.5rem !important;
+}
+
+.logo-font {
+  font-family: "Montserrat Subrayada", sans-serif !important;
+  font-size: 2em !important;
+}
