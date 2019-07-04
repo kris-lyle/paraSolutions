@@ -1,54 +1,166 @@
 <html>
 <head>
 	
-	<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="CSS/paraBase.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat | Montserrat+Subrayada | Ubuntu | Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet">
+
+	<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	crossorigin="anonymous">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+	
 	<!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	<style>
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		body {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		h1 {
+			font-size: 3rem !important;
+			font-weight: 700;
+		}
+
+		h2 {
+			font-size: 3rem !important;
+			font-weight: 600;
+		}
+
+		h3 {
+			font-size: 2.5rem !important;
+		}
+
+		h4 {
+			font-size: 1.5rem !important;
+		}
+
+		h5 {
+			font-size: 1.2rem !important;
+		}
+
+		.logo-font {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 2em !important;
+		}
+
+		.container {
+			width: 90%;
+		}
+
+		.top-bot-pad {
+			padding-top: 13%;
+			padding-bottom: 13%;
+		}
+
+		.row {
+			padding: 20px, 0px, 20px, 0px;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.section {
+			min-height: 100vh;
+		}
+
+		.continuity-top {
+			min-height: 60vh;
+		}
+
+		.card.horizontal {
+			min-height: 200px;
+			margin-bottom: 15%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+
+		blockquote {
+			border-left-color: #ff6f00;
+		}
+
+		.card.package {
+			border-color: #ff6f00;
+			border-style: solid;
+			border-width: 5px;
+			border-radius: 5px;
+			margin-bottom: 15%;
+		}
+
+		.hero-bg {
+			background: url("../img/Kris_BW-(background)-right.jpg");
+			background-size: cover;
+			background-position: center;
+			min-height: 100vh;
+			width: 100%;
+			height: auto;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+
+		.card-panel {
+			opacity: .80;
+			color: white;
+		}
+
+		.card .card-content.activator {
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
 
 <!-- NAVBAR -->
 <div class="navbar-fixed">  
-
   <nav>
-	  <!-- Dropdown Content -->
-	  <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#"><i class="material-icons left">extension</i>Fit Assessment</a></li>
-          <li class="divider"></li>
-        <li><a href="#"><i class="material-icons left">merge_type</i>Expedited Implementation</a></li>
-          <li class="divider"></li>
-        <li><a href="#"><i class="material-icons left">refresh</i>Level Up</a></li>
-          <li class="divider"></li>
-        <li><a href="#"><i class="material-icons left">settings</i>Admin (on-demand)</a></li>
-	  </ul>
+		<div class="container">
+			<!-- Dropdown Content -->
+			<ul id="dropdown1" class="dropdown-content">
+				<li><a href="#"><i class="material-icons left">extension</i>Fit Assessment</a></li>
+					<li class="divider"></li>
+				<li><a href="#"><i class="material-icons left">merge_type</i>Expedited Implementation</a></li>
+					<li class="divider"></li>
+				<li><a href="#"><i class="material-icons left">refresh</i>Level Up</a></li>
+					<li class="divider"></li>
+				<li><a href="#"><i class="material-icons left">settings</i>Admin (on-demand)</a></li>
+			</ul>
 
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">PARA Solutions</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-		<!-- Dropdown Trigger -->
-    	<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">layers</i>Services</a></li>
-        <li><a href="#"><i class="material-icons left">verified_user</i>My Experience</a></li>
-		<li><a class="waves-effect waves-light btn"><i class="material-icons left">message</i>Contact</a></li>      
-	  </ul>
-    </div>
-
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">PARA Solutions</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<!-- Dropdown Trigger -->
+					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">layers</i>Services</a></li>
+						<li><a href="#"><i class="material-icons left">verified_user</i>My Experience</a></li>
+					<li><a class="waves-effect waves-light btn"><i class="material-icons left">message</i>Contact</a></li>      
+				</ul>
+			</div>
+		</div>
   </nav>
 </div>        
         
-</body>
-
 <!--------------- HERO SECTION --------------->
 
 <!-- img src="Kris_BW-(background)-right.jpg" class="bg-hero" -->
 
-<section class="page-section" id="hero">
+<section class="page-section hero-bg">
 	<div class="container">
 	  <div class="row">
 	  	<div class="col s12 l4">
@@ -288,6 +400,8 @@
   </div>
 </div>
 </section>
+
+</body>
 
 <script>
 
