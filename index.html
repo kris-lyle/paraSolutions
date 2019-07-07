@@ -1,4 +1,5 @@
 <html>
+
 <head>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,23 +88,8 @@
 			min-height: 60vh;
 		}
 
-		.card.horizontal {
-			min-height: 200px;
-			margin-bottom: 15%;
-			margin-left: 2%;
-			margin-right: 2%;
-		}
-
 		blockquote {
 			border-left-color: #ff6f00;
-		}
-
-		.card.package {
-			border-color: #ff6f00;
-			border-style: solid;
-			border-width: 5px;
-			border-radius: 5px;
-			margin-bottom: 15%;
 		}
 
 		.hero-bg {
@@ -118,21 +104,14 @@
 			left: 0;
 		}
 
-		.card-panel {
-			opacity: .80;
-			color: white;
-		}
-
-		.card .card-content.activator {
-			cursor: pointer;
-		}
 	</style>
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <div class="navbar-fixed">  
-  <nav>
+  <nav class="grey darken-4">
 		<div class="container">
 			<!-- Dropdown Content -->
 			<ul id="dropdown1" class="dropdown-content">
@@ -201,7 +180,7 @@
 
 			<!-- TAB CONTENT -->
 			<div id="selection-swipe" class="col s12 m8 offset-m2">
-				<h2 class="center">Software Selection</h2>
+				<h2>Software Selection</h2>
 				<div class="flow-text">Procore is not for everyone, but is it right for you?</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
@@ -212,7 +191,7 @@
 			</div>
 
 			<div id="implementation-swipe" class="col s12 m8 offset-m2">
-				<h2 class="center">Implementation</h2>
+				<h2>Implementation</h2>
 				<div class="flow-text">New to Procore? I can expedite your implementation.</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
@@ -223,7 +202,7 @@
 			</div>
 
 			<div id="refresh-swipe" class="col s12 m8 offset-m2">
-				<h2 class="center">Refresh</h2>
+				<h2>Refresh</h2>
 				<div class="flow-text">Recently renewed and ready for a re-launch?</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
@@ -234,7 +213,7 @@
 			</div>
 
 			<div id="admin-swipe" class="col s12 m8 offset-m2">
-				<h2 class="center">Admin (on-demand)</h2>
+				<h2>Admin (on-demand)</h2>
 				<div class="flow-text">Sub-out the admin work and just pay for what you need</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
@@ -248,94 +227,11 @@
 	</div>
 </section>
 
-<!--------------- SERVICES SECTION -------------
-
-<section class="page-section" id="services">
-	  <h1 class="center"><mark>Services</mark></h1>
-	  
-		<div class="row">
-		  	<div class="col s12 m6">
-		  	  <h2>Fit Assessment</h2>
-		  	  <h4>Procore is not for everyone, but is it right for you?</h4>
-		  	  <p>You probably:</p>
-		  	  <ul class=" browser-default a">
-		  	  	<li>Don't want to spend money on a platform you'll regret</li>
-		  	  	<li>Don't want to be surprised by any overlooked or unmet critical requirements</li>
-		  	  	<li>Would appreciate the peace of mind that comes from a 3rd party opinion that's swam in the "deep waters" with the system</li>
-		  	  </ul>
-		  	</div>
-
-		  	<div class="col s12 m6">
-			  <p>Objective: Help you confidently arrive at a descision about whether or not Procore is a best fit for your business model</p>
-			  <p>How? Match my in-depth understanding of Procore's can and can'ts against your project requirements
-		  	</div>
-		</div>
-
-		<div class="row row-grey">
-		  	<div class="col s12 m6 l6">
-		  	  <h2>Implementation</h2>
-		  	  <h4>New to Procore? I can expedite your implementation.</h4>
-		  	  <p>You probably:</p>
-		  	  <ul class="browser-default a">
-		  	  	<li>Can't afford to have your project teams slowed down by rolling out Procore</li>
-		  	  	<li>Want to get your money’s worth out of Procore as fast as possible</li>
-		  	  	<li>Have got your hands full and don’t know where to start with confidence</li>
-		  	  </ul>
-		  	</div>
-		  	<div class="col s12 m6 l6 center">
-			    <img src="#">
-		    </div>
-		</div>
-
-	    <div class="row">
-		  	<div class="col s12 m6 l6">
-		  	  <h2>Level Up</h2>
-		  	  <h4>So you've had Procore for a while but never really got it lauched like you wanted.</h4>
-		  	  <p>You probably:</p>
-		  	  <ul class="browser-default a">
-		  	  	<li>Have had Procore for a while but it hasn't taken off like you wanted</li>
-		  	  	<li>Feel up for giving it a second chance</li>
-		  	  	<li>Point number three is that it comes third</li>
-		  	  </ul>
-		  	</div>
-		  	<div class="col s12 m6 l6 center">
-			    <img src="#">
-		    </div>
-		</div>
-
-		<div class="row row-grey">
-			  <div class="col s12 m6 l6">
-				<h2>Admin (on-demand)</h2>
-				<h4>Ipsum lorem decum novem sanctum corpus.</h4>
-				  <ul>
-					<li>Point number one is that it comes first</li>
-					<li>Point number two is that it comes second</li>
-					<li>Point number three is that it comes third</li>
-				  </ul>
-			  </div>
-	          <div class="col s12 m6 l6 center">
-			    <img src="#">
-		  	  </div>
-		</div> 
-</section>
-
-<div class="row">
-  <div class="col s12 m6 valign-wrapper" style="height:400px; background: #f4f4f4">
-    <div class="relative ">
-      <h2>Testing</h2>
-      <p class="flow-text">Ipsum lorem et nun docet placum erat sumus dominicus.</p>
-      <div class="bottomright"><i class="material-icons small">extension</i></div>
-  	</div>
-  </div>
-</div>
-
--->
-
 <!--------------- EXPERIENCE SECTION --------------->
 
-<section class="page-section" id="experience">
+<section class="section valign-wrapper grey lighten-4" id="experience">
 	<div class="container">
-	  <h2 class="center">Experience</h2>
+	  <h3 class="center">Experience</h3>
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
 	  		<ul class="collapsible">
@@ -346,7 +242,7 @@
           	</div>
             <div class="collapsible-body" style="display: block;">
               <span>I've implemented Procore on over 30 projects, totaling 100M+ in contract value, working with 7+ business units, provided introductory and in-depth training for one-on-one to groups of 20, in the field and in the office, for PMs, Coordinators, Supers, Engineers, VPs, Inspectors, you name it.
-			  <h4>Quick Facts</h4>
+			  <h5>Quick Facts</h5>
 			  <ul class="browser-default a">
 			  	<li>Primary Industry Experience: Oil & Gas (Midstream)</li>
 			  	<li>Types of Projects: Facility, Heavy Civil, Maintenance, FEED</li>
@@ -362,7 +258,7 @@
           	</div>
             <div class="collapsible-body" style="">
               <span>I have in-depth experience with Procore's portfolio of tools and have worked out new Standard Operating Procedures based on the tools in ways that make sense for Project Teams.
-			  <h4>Quick Facts</h4>
+			  <h5>Quick Facts</h5>
 			  <ul class="browser-default a">
 			  	<li>Primary Industry Experience: Oil & Gas (Midstream)</li>
 			  	<li>Types of Projects: Facility, Heavy Civil, Maintenance, FEED</li>
@@ -378,7 +274,7 @@
           	</div>
             <div class="collapsible-body" style="">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			  <h4>Quick Facts</h4>
+			  <h5>Quick Facts</h5>
 			  <ul class="browser-default a">
 			  	<li>Primary Industry Experience: Oil & Gas (Midstream)</li>
 			  	<li>Types of Projects: Facility, Heavy Civil, Maintenance, FEED</li>
@@ -395,9 +291,9 @@
 
 <!--------------- NOT YOUR GUY SECTION --------------->
 
-<section class="page-section" id="not-your-guy">
+<section class="section valign-wrapper grey lighten-2" id="not-your-guy">
 	<div class="container">
-	  <h2 class="center">I'm not your guy...</h2>
+	  <h3 class="center">I'm not your guy...</h3>
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
 	  <ul class="collapsible">
@@ -477,13 +373,9 @@
   });
 
 	$(document).ready(function(){
-    $('.tabs').tabs();
+    $('.tabs').tabs({
+		swipeable: true,
   });
-
-	$('#solution-swipe').tabs({
-		swipeable: true
-		duration: 3000
-	});
 
 // SLOW ANCHOR LINK SCROLLING 
 // Select all links with hashes
