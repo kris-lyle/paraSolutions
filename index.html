@@ -16,6 +16,8 @@
 	crossorigin="anonymous">
 	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
 	
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -39,7 +41,7 @@
 		}
 
 		h2 {
-			font-size: 3rem !important;
+			font-size: 2.5rem !important;
 			font-weight: 600;
 		}
 
@@ -48,15 +50,15 @@
 		}
 
 		h4 {
-			font-size: 1.5rem !important;
+			font-size: 1.3rem !important;
 		}
 
 		h5 {
-			font-size: 1.2rem !important;
+			font-size: 1.0rem !important;
 		}
 
 		.logo-font {
-			font-family: 'Montserrat', sans-serif;
+			font-family: 'Montserrat Subrayada', 'Montserrat', sans-serif;
 			font-size: 2em !important;
 		}
 
@@ -138,13 +140,13 @@
 					<li class="divider"></li>
 				<li><a href="#"><i class="material-icons left">merge_type</i>Expedited Implementation</a></li>
 					<li class="divider"></li>
-				<li><a href="#"><i class="material-icons left">refresh</i>Level Up</a></li>
+				<li><a href="#"><i class="material-icons left">refresh</i>Refresh</a></li>
 					<li class="divider"></li>
 				<li><a href="#"><i class="material-icons left">settings</i>Admin (on-demand)</a></li>
 			</ul>
 
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">PARA Solutions</a>
+				<a href="#" class="logo-font">PARA Solutions</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<!-- Dropdown Trigger -->
 					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">layers</i>Services</a></li>
@@ -158,63 +160,148 @@
         
 <!--------------- HERO SECTION --------------->
 
-<!-- img src="Kris_BW-(background)-right.jpg" class="bg-hero" -->
-
-<section class="page-section hero-bg">
+<section class="section hero-bg valign-wrapper">
 	<div class="container">
 	  <div class="row">
 	  	<div class="col s12 l4">
-	  	  <p>Specialized ConTech Services</p>
-	  	  <h1>Tailored solutions for your Procore needs</h1>
+	  	  <p class="white-text">Specialized ConTech Services</p>
+	  	  <h1 class="white-text">Tailored solutions for your Procore needs</h1>
 	  	</div>
 	  </div>
 	  <div class="row">
 	  	<div class="col s12 l4">
-		  <a class="waves-effect waves-light btn-large orange darken-3"><i class="material-icons left">warning</i>I'm not your guy if... </a>
-		</div>
+		  	<a href="#not-your-guy" class="waves-effect waves-light btn-large orange darken-3"><i class="material-icons left">warning</i>I'm not your guy if... </a>
+			</div>
 	  </div>
 	</div>
 </section>
 
-<!--------------- OVERVIEW SECTION --------------->
+<!--------------- OVERVIEW SECTION ---------------
 
-<section class="page-section" id="services">
+<section class="section valign-wrapper" id="services">
     <div class="container center">
-      <h1 class="center"><mark>What do you need?</mark></h2>
-      <div class="row">
-        <div class="col s12 m6 l3">
-          <div class="mt-5">
-			<i class="medium material-icons">extension</i>
-            <h3 class="mb-2">Fit Assessment</h3>
-            <p class="text-muted mb-0">Remove the guesswork and discover if Procore's a good fit</p>
-          </div>
+      <h2 class="flow-text">What do you need?</h2>
+			<div class="row">
+			
+				<div class="col s12 m6 l3">
+					<div class="card-panel hoverable">
+						<span class="black-text">
+							<i class="medium material-icons">extension</i>
+							<h4>Fit Assessment</h4>
+							<p class="text-muted">Remove the guesswork and discover if Procore's a good fit</p>
+						</span>
+					</div>
         </div>
-        <div class="col s12 m6 l3">
-          <div class="mt-5">
-			<i class="medium material-icons">merge_type</i>
-            <h3 class="mb-2">Implementation</h3>
-            <p class="text-muted mb-0">Enterprise-level, battle-tested, 100M+ implementation experience at your service.</p>
-          </div>
+			
+				<div class="col s12 m6 l3">
+					<div class="card-panel hoverable">
+						<span class="black-text">
+							<i class="medium material-icons">merge_type</i>
+							<h4>Implementation</h4>
+							<p class="text-muted">Enterprise-level, field-tested, 100M+ implementation experience at your service.</p>
+						</span>
+					</div>
         </div>
+			
+				<div class="col s12 m6 l3">
+					<div class="card-panel hoverable">
+						<span class="black-text">
+							<i class="medium material-icons">refresh</i>
+							<h4>Refresh</h4>
+							<p class="text-muted">Think you should be getting more out of Procore? You're correct.</p>
+						</span>
+					</div>
+				</div>
+				
         <div class="col s12 m6 l3">
-          <div class="mt-5">
-			<i class="medium material-icons">refresh</i>
-            <h3 class="mb-2">Level Up</h3>
-            <p class="text-muted mb-0">Think you should be getting more out of Procore? You're correct.</p>
-          </div>
-        </div>
-        <div class="col s12 m6 l3">
-          <div class="mt-5">
-			<i class="medium material-icons">tune</i>
-            <h3 class="mb-2">Admin (on-demand)</h3>
-            <p class="text-muted mb-0">Why not sub out the "Procore Admin" role, and only pay for what you need, when you need?</p>
-          </div>
-        </div>
+					<div class="card-panel hoverable">
+						<span class="black-text">
+							<i class="medium material-icons">tune</i>
+							<h4 class="mb-2">Admin (on-demand)</h4>
+							<p class="text-muted mb-0">Why not sub out the "Procore Admin" role, and only pay for what you need, when you need?</p>
+						</span>
+					</div>
+				</div>
+				
       </div>
     </div>
 </section>
+
+-->
   
-<!--------------- SERVICES SECTION --------------->
+<!--------------- SWIPABLE TAB SECTION --------------->
+
+<section class="section">
+	<div class="container">
+		<div class="row">	
+
+			<div class="col s12 m8 offset-m2">
+				<ul id="solution-swipe" class="tabs tabs-fixed-width">
+					<li class="tab col 3">
+						<a href="#selection-swipe">Select</a>
+					</li>
+					<li class="tab col 3">
+						<a href="#implementation-swipe">Implement</a>
+					</li>
+					<li class="tab col 3">
+						<a href="#refresh-swipe">Refresh</a>
+					</li>
+					<li class="tab col 3">
+						<a href="#admin-swipe">Admin</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- TAB CONTENT -->
+			<div id="selection-swipe" class="col s12 m8 offset-m2">
+				<h2 class="center">Software Selection</h2>
+				<div class="flow-text">Procore is not for everyone, but is it right for you?</div>
+				<p>You probably:</p>
+				<ul class="browser-default a">
+					<li>Don't want to spend money on a platform you'll regret</li>
+					<li>Don't want to be surprised by overlooked requirements</li>
+					<li>Would appreciate the peace of mind that comes from a 3rd party opinion that's swam in the "deep waters" with the system</li>
+				</ul>
+			</div>
+
+			<div id="implementation-swipe" class="col s12 m8 offset-m2">
+				<h2 class="center">Implementation</h2>
+				<div class="flow-text">New to Procore? I can expedite your implementation.</div>
+				<p>You probably:</p>
+				<ul class="browser-default a">
+					<li>Can't afford to have your project teams slowed down by rolling out Procore</li>
+					<li>Want to get your money’s worth out of Procore as fast as possible</li>
+					<li>Have got your hands full and don’t know where to start with confidence</li>
+				</ul>
+			</div>
+
+			<div id="refresh-swipe" class="col s12 m8 offset-m2">
+				<h2 class="center">Refresh</h2>
+				<div class="flow-text">Recently renewed and ready for a re-launch?</div>
+				<p>You probably:</p>
+				<ul class="browser-default a">
+					<li>Have had Procore for a while but it hasn't taken off like you wanted</li>
+					<li>Feel up for giving it a second chance</li>
+					<li>Point number three is that it comes third</li>
+				</ul>
+			</div>
+
+			<div id="admin-swipe" class="col s12 m8 offset-m2">
+				<h2 class="center">Admin (on-demand)</h2>
+				<div class="flow-text">Sub-out the admin work and just pay for what you need</div>
+				<p>You probably:</p>
+				<ul class="browser-default a">
+					<li>Don’t want to hire a full-time Procore Admin</li>
+					<li>Would love to give some time back to your PMs</li>
+					<li>Would prefer to pay for what you need when you need</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!--------------- SERVICES SECTION -------------
 
 <section class="page-section" id="services">
 	  <h1 class="center"><mark>Services</mark></h1>
@@ -295,14 +382,16 @@
   </div>
 </div>
 
+-->
+
 <!--------------- EXPERIENCE SECTION --------------->
 
 <section class="page-section" id="experience">
 	<div class="container">
-	  <h1 class="center"><mark>Experience</mark></h1>
+	  <h2 class="center">Experience</h2>
 	  <div class="row">
-	  	<div class="col s12">
-	  <ul class="collapsible popout">
+	  	<div class="col s12 m8 offset-m2">
+	  		<ul class="collapsible popout">
           <li class="active">
             <div class="collapsible-header" tabindex="0">
               <i class="material-icons">business</i>
@@ -361,9 +450,9 @@
 
 <section class="page-section" id="not-your-guy">
 	<div class="container">
-	  <h1 class="center"><mark>I'm not your guy...</mark></h1>
+	  <h2 class="center">I'm not your guy...</h2>
 	  <div class="row">
-	  	<div class="col s12">
+	  	<div class="col s12 m8 offset-m2">
 	  <ul class="collapsible popout">
           <li class="active">
             <div class="collapsible-header" tabindex="0">
@@ -403,6 +492,14 @@
 
 </body>
 
+<footer>
+
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
 <script>
 
 	$var (".dropdown-trigger").dropdown();
@@ -412,6 +509,53 @@
       var instances = M.Collapsible.init(elems, options);
   });
 
+	$(document).ready(function(){
+    $('.tabs').tabs();
+  });
+
+	$('#solution-swipe').tabs({
+		swipeable: true
+		duration: 3000
+	});
+
+// SLOW ANCHOR LINK SCROLLING 
+// Select all links with hashes
+    $('a[href*="#"]')
+		// Remove links that don't actually link to anything
+		.not('[href="#"]')
+		.not('[href="#0"]')
+		.click(function(event) {
+			// On-page links
+			if (
+				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+				&& 
+				location.hostname == this.hostname
+			) {
+				// Figure out element to scroll to
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				// Does a scroll target exist?
+				if (target.length) {
+					// Only prevent default if animation is actually gonna happen
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000, function() {
+						// Callback after animation
+						// Must change focus!
+						var $target = $(target);
+						$target.focus();
+						if ($target.is(":focus")) { // Checking if the target was focused
+							return false;
+						} else {
+							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+							$target.focus(); // Set focus again
+						};
+					});
+				}
+			}
+		});
+		
 </script>
 
 </html>
