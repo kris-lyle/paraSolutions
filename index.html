@@ -96,7 +96,7 @@
 			background: url("../img/Kris_BW-(background)-right.jpg");
 			background-size: cover;
 			background-position: center;
-			min-height: 100vh;
+			min-height: 85vh;
 			width: 100%;
 			height: auto;
 			position: relative;
@@ -108,6 +108,15 @@
       width: 100%;
 		}
 		
+		.accent-row {
+			background-color: #1976d2;
+			padding: 10px;
+		}
+
+		.tabs .tab {
+			font-weight: 550;
+		}
+
 		.tabs .tab a {
 			color: #1976d2;
 		}
@@ -188,9 +197,10 @@
 	  <div class="row">
 	  	<div class="col s12 l4">
 	  	  <h5 class="white-text"><i>I specialize in Procore</i></h5>
-	  	  <h1 class="white-text">Down-to-earth, knee-to-knee solutions for your Procore needs</h1>
+	  	  <h1 class="white-text">Down-to-earth, knee-to-knee solutions</h1>
 	  	</div>
-	  </div>
+		</div>
+		<br>
 	  <div class="row">
 	  	<div class="col s12 l4">
 		  	<a href="#not-your-guy" class="waves-effect waves-light btn-large orange darken-3"><i class="material-icons left">warning</i>I'm not your guy if... </a>
@@ -201,12 +211,14 @@
   
 <!--------------- SWIPEABLE TAB SECTION --------------->
 
-<section>
+<section class="section valign-wrapper">
+	<!--<div class="accent-row center-align"><h1 style="margin: 0 !important;">Solutions</h1></div>-->
 	<div class="container">
 		<div class="row">	
 
-			<div class="col s12 m8 offset-m2">
-				<ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
+			<div class="col s12 m8 offset-m2 l6 offset-l3">
+				<h1 class="accent-row center">Solutions</h1>
+				<ul id="solution-swipe" class="tabs tabs-fixed-width">
 					<li class="tab col 3">
 						<a href="#selection-swipe">Select</a>
 					</li>
@@ -223,7 +235,7 @@
 			</div>
 
 			<!-- TAB CONTENT -->
-			<div id="selection-swipe" class="col s12 m8 offset-m2">
+			<div id="selection-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
 				<h2>Software Selection</h2>
 				<div class="flow-text">Procore isn't for everyone, but is it right for you?</div>
 				<p>You probably:</p>
@@ -234,7 +246,7 @@
 				</ul>
 			</div>
 
-			<div id="implementation-swipe" class="col s12 m8 offset-m2">
+			<div id="implementation-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
 				<h2>Implementation</h2>
 				<div class="flow-text">New to Procore? I can expedite your implementation.</div>
 				<p>You probably:</p>
@@ -245,7 +257,7 @@
 				</ul>
 			</div>
 
-			<div id="refresh-swipe" class="col s12 m8 offset-m2">
+			<div id="refresh-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
 				<h2>Refresh</h2>
 				<div class="flow-text">Recently renewed and ready for a re-launch?</div>
 				<p>You probably:</p>
@@ -256,7 +268,7 @@
 				</ul>
 			</div>
 
-			<div id="admin-swipe" class="col s12 m8 offset-m2">
+			<div id="admin-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
 				<h2>Admin (on-demand)</h2>
 				<div class="flow-text">Sub-out the admin work and only pay for what you need</div>
 				<p>You probably:</p>
@@ -338,7 +350,7 @@
 
 <!--------------- NOT YOUR GUY SECTION --------------->
 
-<section class="section valign-wrapper dotted" id="not-your-guy">
+<section class="section valign-wrapper grey lighten-4" id="not-your-guy">
 	<div class="container">
 	  <h3 class="center">I'm not your guy...</h3>
 	  <div class="row">
@@ -350,7 +362,7 @@
           		I'm not your guy if you want to move slowly and methodically...
           	</div>
             <div class="collapsible-body" style="display: block;">
-              <span>I'm not your guy if you want to move slowly and methodically. I thrive in contexts where project teams want to take action. With my implementation experience, I can provide the right amount of order without slowing your teams down. Together, we can move smart and fast.
+              <span>I thrive in contexts where project teams want to take action. With my implementation experience, I can provide the right amount of order without slowing your teams down. Together, we can move smart and fast.
 			  </span>
             </div>
           </li>
@@ -360,7 +372,7 @@
           		I'm not your guy if you want a libary of polished process flow diagrams...
           	</div>
             <div class="collapsible-body" style="">
-              <span>I’m not your guy if you want to walk away with a polished process flow diagram of your as-is and to-be processes. I can whiteboard and paper-napkin until we get it right, but I’ll leave the ball in your court to make it pretty and put a bow on it.
+              <span>I can whiteboard and paper-napkin until we get it right, but I’ll leave the ball in your court to make it pretty and put a bow on it.
               </span>
             </div>
           </li>
@@ -370,7 +382,7 @@
           		I'm not your guy if you plan to keep me in the office...
           	</div>
             <div class="collapsible-body" style="">
-              <span>I’m not your guy if you plan to keep me in the office. Procore is a field application and my experience implementing it is grounded in field-training at job sites. Office management training is one part of the equation, but successful adoption and implementation can’t stop there.
+              <span>Procore is a field application and my experience implementing it is grounded in field-training at job sites. Office management training is one part of the equation, but successful adoption and implementation can’t stop there.
               </span>
             </div>
           </li>
@@ -414,7 +426,7 @@
 
   $(document).ready(function(){
     $('.collapsible').collapsible({
-			
+
 		});
   });
 
