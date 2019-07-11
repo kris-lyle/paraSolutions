@@ -16,7 +16,7 @@
 	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 	crossorigin="anonymous">
 	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500, 600,700" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
 	
@@ -34,6 +34,7 @@
 
 		body {
 			font-family: 'Montserrat', sans-serif;
+			font-size: 1.2rem;
 		}
 
 		h1 {
@@ -42,12 +43,14 @@
 		}
 
 		h2 {
-			font-size: 2.3rem !important;
-			font-weight: 600;
+			font-size: 3.0rem !important;
+			font-weight: 400;
+			font-style: italic;
 		}
 
 		h3 {
 			font-size: 2.0rem !important;
+			font-weight: 600;
 		}
 
 		h4 {
@@ -61,6 +64,7 @@
 
 		.logo-font {
 			font-family: 'Montserrat Subrayada', 'Montserrat', sans-serif;
+			font-size: 2.0rem;
 		}
 
 		.container {
@@ -108,25 +112,37 @@
       width: 100%;
 		}
 		
-		.accent-row {
-			background-color: #1976d2;
-			padding: 10px;
+		.blue-accent {
+			background: #1976d2;
+			background-image: linear-gradient (#1976d2, white);
+		}
+
+		.tabs {
+			background-color: transparent !important;
+			height: inherit !important;
 		}
 
 		.tabs .tab {
-			font-weight: 550;
+			font-weight: 600;
+			border-color: #ef6c00;
+			border-width: 3px;
+			border-style: solid;
+			border-radius: 3px;
+			margin: 10px;
+			background-color: transparent;
 		}
 
 		.tabs .tab a {
-			color: #1976d2;
+			color: #fff;
 		}
 
 		.tabs .tab a:focus, .tabs .tab a:focus.active {
-  		background-color: rgba(30, 136, 229, 0.2);
+  		background-color: #f57c00;
 		}
 
+
 		.tabs .tab a:hover, .tabs .tab a.active {
-  		color: #1976d2;
+  		color: #fff;
 		}
 
 		.tabs .tab.disabled a,
@@ -135,11 +151,15 @@
 		}
 
 		.tabs .indicator {
-  		background-color: #1976d2;
+			background-color: #ef6c00;
+		}
+
+		.collapsible-header {
+			font-size: 1.3rem !important;
 		}
 
 		.collapsible-header:focus {
-			background-color: rgba(30, 136, 229, 0.2);
+			background-color: rgb(239,108,.2);
 		}
 
 		.collapsible-body {
@@ -155,6 +175,18 @@
   		-webkit-background-size: 3px 3px;
   		-moz-background-size: 3px 3px;
   		background-size: 3px 3px;
+		}
+
+		.pad-b-5 {
+			padding-bottom: 5%;
+		}
+
+		.pad-b-2 {
+			padding-bottom: 2%;
+		}
+
+		.mar-b-7 {
+			margin-bottom: 7%;
 		}
 
 	</style>
@@ -178,7 +210,7 @@
 			</ul>
 
 			<div class="nav-wrapper">
-				<a href="#" class="logo-font center-align">PARA Solutions</a>
+				<a href="#" class="logo-font center-align">PARA SOLUTIONS LLC</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<!-- Dropdown Trigger -->
 					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">layers</i>Services</a></li>
@@ -211,15 +243,14 @@
   
 <!--------------- SWIPEABLE TAB SECTION --------------->
 
-<section class="section valign-wrapper">
-	<!--<div class="accent-row center-align"><h1 style="margin: 0 !important;">Solutions</h1></div>-->
+<section class="section valign-wrapper blue-accent dotted">
 	<div class="container">
 		<div class="row">	
 
 			<div class="col s12 m8 offset-m2 l6 offset-l3">
-				<h1 class="accent-row center">Solutions</h1>
-				<ul id="solution-swipe" class="tabs tabs-fixed-width">
-					<li class="tab col 3">
+				<h2 class="center pad-b-5">How can I help?</h2>
+				<ul id="solution-swipe" class="tabs tabs-fixed-width mar-b-7">
+					<li class="tab col 3 active">
 						<a href="#selection-swipe">Select</a>
 					</li>
 					<li class="tab col 3">
@@ -236,18 +267,16 @@
 
 			<!-- TAB CONTENT -->
 			<div id="selection-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
-				<h2>Software Selection</h2>
 				<div class="flow-text">Procore isn't for everyone, but is it right for you?</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
-					<li>Don't want to spend money on a platform you'll regret</li>
-					<li>Don't want to be surprised by overlooked requirements</li>
-					<li>Would appreciate the peace of mind that comes from a 3rd party opinion that's swam in the "deep waters" with the system</li>
+					<li>Don't want to waste money on a platform you'll regret</li>
+					<li>Want to avoid being oversold fancy solutions</li>
+					<li>Would appreciate the peace of mind that comes with 3rd party feedback</li>
 				</ul>
 			</div>
 
 			<div id="implementation-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
-				<h2>Implementation</h2>
 				<div class="flow-text">New to Procore? I can expedite your implementation.</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
@@ -258,18 +287,16 @@
 			</div>
 
 			<div id="refresh-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
-				<h2>Refresh</h2>
 				<div class="flow-text">Recently renewed and ready for a re-launch?</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
-					<li>Have had Procore for a while but it hasn't taken off like you wanted</li>
-					<li>Feel up for giving it a second chance</li>
-					<li>Point number three is that it comes third</li>
+					<li>Didn't get it rolled out like you wanted cause your projects kept truckin</li>
+					<li>Have a better idea of what it'll take for Round 2</li>
+					<li>Know you're going to need some outside help to get it done</li>
 				</ul>
 			</div>
 
 			<div id="admin-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
-				<h2>Admin (on-demand)</h2>
 				<div class="flow-text">Sub-out the admin work and only pay for what you need</div>
 				<p>You probably:</p>
 				<ul class="browser-default a">
@@ -285,9 +312,9 @@
 
 <!--------------- EXPERIENCE SECTION --------------->
 
-<section class="section valign-wrapper grey lighten-4" id="experience">
+<section class="section valign-wrapper" id="experience">
 	<div class="container">
-	  <h3 class="center">Experience</h3>
+	  <h2 class="center pad-b-5">You'll be in good hands</h2>
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
 	  		<ul class="collapsible">
@@ -298,7 +325,7 @@
           	</div>
             <div class="collapsible-body" style="display: block;">
               <span>I've implemented Procore on over 50 projects, totaling 200M+ in contract value, working with 8+ business units, provided introductory and in-depth training for one-on-one to groups of 20, in the field and in the office, for PMs, Coordinators, Supers, Engineers, VPs, Inspectors, you name it.
-								<h5>Quick Facts</h5>
+								<p>QUICK FACTS</p>
 								<ul class="browser-default a">
 									<li>Primary Industry Experience: Oil & Gas (Midstream)</li>
 									<li>Types of Projects: Facility, Pipeline, Heavy Civil, Maintenance, FEED</li>
@@ -314,12 +341,12 @@
           		Field & Office Training
           	</div>
             <div class="collapsible-body" style="">
-              <span>I've trained Foreman and Supers to PMs and Senior Management.
-								<h5>Quick Facts</h5>
+              <span>I'm not your typical "implementor". Although rubbing shoulders with VPs is fun and all, I prefer the field and training Supers, Coordinators and Foreman... the one's that'll actually be using the tool to collect your data. 
+								<p>QUICK FACTS</p>
 								<ul class="browser-default a">
-									<li>Primary Industry Experience: Oil & Gas (Midstream)</li>
-									<li>Types of Projects: Facility, Heavy Civil, Maintenance, FEED</li>
-									<li>Duration of Projects: 2 weeks to 8 months</li>
+									<li>Locations: Texas (Midland, Pecos, Orla, Spring); New Mexico (Carlsbad); Oklahoma (Yukon); Colorado (Durango)</li>
+									<li>Group Sizes: 1-25 (avg. 5)</li>
+									<li>Positions: Foremen, Supers, Coordinators, Controllers, Project Managers, Doc Control, QAQC, Engineers, Drafters, Division Managers, Directors, VPs</li>
 								</ul>
               </span>
             </div>
@@ -331,12 +358,12 @@
           		Procore Tools & Processes
           	</div>
             <div class="collapsible-body" style="">
-              <span>I have in-depth experience with Procore's portfolio of tools and have worked out new Standard Operating Procedures based on the tools in ways that make sense for Project Teams.
-								<h5>Specialize:</h5>
+              <span>I've got in-depth experience with Procore's portfolio of tools and have worked out new SOPs based on the tools in ways that make sense for more than a dozen Project Teams.
+								<p>QUICK FACTS</p>
 								<ul class="browser-default a">
-									<li>PM: RFI, Drawing, Documents, Daily Log</li>
-									<li>QS: Inspections, Punch List, Observations</li>
-									<li>Company Level: Custom reports, Permission template design</li>
+									<li>Expert Knowledge: RFI, Drawing, Documents, Daily Log</li>
+									<li>QAQC: Implemented Punch List and Observation tools on FERC project</li>
+									<li>Specialties: Designing custom reports, project and permission templates</li>
 								</ul>
               </span>
             </div>
@@ -350,9 +377,9 @@
 
 <!--------------- NOT YOUR GUY SECTION --------------->
 
-<section class="section valign-wrapper grey lighten-4" id="not-your-guy">
+<section class="section valign-wrapper grey lighten-4 dotted" id="not-your-guy">
 	<div class="container">
-	  <h3 class="center">I'm not your guy...</h3>
+	  <h2 class="center pad-b-5">But I'm not your guy if...</h2>
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
 	  <ul class="collapsible">
