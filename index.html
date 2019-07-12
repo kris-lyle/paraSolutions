@@ -64,21 +64,27 @@
 
 		.logo-font {
 			font-family: 'Montserrat Subrayada', 'Montserrat', sans-serif;
-			font-size: 2.0rem;
+			font-size: 1.7rem;
+		}
+
+		.flow-text {
+			font-weight: 500 !important;
 		}
 
 		.container {
-			width: 90%;
+			width: 95%;
 		}
 
+		/* NOT USED
 		.top-bot-pad {
 			padding-top: 13%;
 			padding-bottom: 13%;
-		}
+		} */
 
+		/* SEE IF ADDRESSES WIDTH CONSTRAINTS ON MOBILE
 		.row {
 			padding: 20px, 0px, 20px, 0px;
-		}
+		} */
 
 		* {
 			box-sizing: border-box;
@@ -88,13 +94,10 @@
 			min-height: 100vh;
 		}
 
-		.continuity-top {
-			min-height: 60vh;
-		}
-
+		/* NOT USED
 		blockquote {
 			border-left-color: #ff6f00;
-		}
+		} */
 
 		.hero-bg {
 			background: url("../img/Kris_BW-(background)-right.jpg");
@@ -106,10 +109,6 @@
 			position: relative;
 			top: 0;
 			left: 0;
-		}
-
-    .carousel .carousel-item {
-      width: 100%;
 		}
 		
 		.blue-accent {
@@ -128,8 +127,8 @@
 			border-width: 3px;
 			border-style: solid;
 			border-radius: 3px;
-			margin: 10px;
-			background-color: transparent;
+			margin: 10px; /* WHAT HAPPENS WHEN I REMOVE THIS? */
+			background-color: rgba(30, 136, 229, 0.1);
 		}
 
 		.tabs .tab a {
@@ -139,7 +138,6 @@
 		.tabs .tab a:focus, .tabs .tab a:focus.active {
   		background-color: #f57c00;
 		}
-
 
 		.tabs .tab a:hover, .tabs .tab a.active {
   		color: #fff;
@@ -159,7 +157,11 @@
 		}
 
 		.collapsible-header:focus {
-			background-color: rgb(239,108,.2);
+			border-color: #ef6c00;
+			border-width: 3px;
+			border-style: solid;
+			border-radius: 3px;
+			background-color: transparent;
 		}
 
 		.collapsible-body {
@@ -438,7 +440,7 @@
 <footer class="page-footer grey darken-4">
   <div class="footer-copyright">
     <div class="container center">
-    <div>© 2019 Para Solutions | Admin (On-Demand) is not affiliated with or endorsed by Procore Technologies, Inc.
+    <div>© 2019 Para Solutions LLC is not affiliated with or endorsed by Procore Technologies, Inc.
     </div>
   </div>
 </footer>
