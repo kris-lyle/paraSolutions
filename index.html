@@ -75,6 +75,11 @@
 			width: 95%;
 		}
 
+		.right-icon {
+			position: absolute;
+			right: 0;
+		}
+
 		/* NOT USED
 		.top-bot-pad {
 			padding-top: 13%;
@@ -113,7 +118,6 @@
 		
 		.blue-accent {
 			background: #1976d2;
-			background-image: linear-gradient (#1976d2, white);
 		}
 
 		.tabs {
@@ -127,7 +131,7 @@
 			border-width: 3px;
 			border-style: solid;
 			border-radius: 3px;
-			margin: 10px; /* WHAT HAPPENS WHEN I REMOVE THIS? */
+			margin: 10px;
 			background-color: rgba(30, 136, 229, 0.1);
 		}
 
@@ -136,7 +140,7 @@
 		}
 
 		.tabs .tab a:focus, .tabs .tab a:focus.active {
-  		background-color: #f57c00;
+  		background-color: #ef6c00;
 		}
 
 		.tabs .tab a:hover, .tabs .tab a.active {
@@ -154,22 +158,21 @@
 
 		.collapsible-header {
 			font-size: 1.3rem !important;
+			position: relative;
 		}
 
 		.collapsible-header:focus {
-			border-color: #ef6c00;
+			border-color: #1976d2;
 			border-width: 3px;
 			border-style: solid;
 			border-radius: 3px;
-			background-color: transparent;
 		}
 
 		.collapsible-body {
-			background-color: white;
+			background-color: #fafafa;
 		}
 		
 		.dotted {
-			padding: 2.25em 1.6875em;
   		background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   		background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   		background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -320,10 +323,10 @@
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
 	  		<ul class="collapsible">
-          <li class="active">
-            <div class="collapsible-header" tabindex="1">
+          <li>
+            <div class="collapsible-header active" tabindex="1">
               <i class="material-icons" style="color: #1976d2">business</i>
-          		Project Portfolio
+          		Project Portfolio<i class="material-icons right-icon">arrow_drop_down</i>
           	</div>
             <div class="collapsible-body" style="display: block;">
               <span>I've implemented Procore on over 50 projects, totaling 200M+ in contract value, working with 8+ business units, provided introductory and in-depth training for one-on-one to groups of 20, in the field and in the office, for PMs, Coordinators, Supers, Engineers, VPs, Inspectors, you name it.
@@ -337,10 +340,10 @@
             </div>
           </li>
           
-          <li class="">
+          <li>
             <div class="collapsible-header" tabindex="2">
               <i class="material-icons" style="color: #1976d2">data_usage</i>
-          		Field & Office Training
+          		Field & Office Training<i class="material-icons right-icon">arrow_drop_down</i>
           	</div>
             <div class="collapsible-body" style="">
               <span>I'm not your typical "implementor". Although rubbing shoulders with VPs is fun and all, I prefer the field and training Supers, Coordinators and Foreman... the one's that'll actually be using the tool to collect your data. 
@@ -354,10 +357,10 @@
             </div>
 					</li>
 
-					<li class="">
+					<li>
             <div class="collapsible-header" tabindex="3">
               <i class="material-icons" style="color: #1976d2">build</i>
-          		Procore Tools & Processes
+          		Procore Tools & Processes<i class="material-icons right-icon">arrow_drop_down</i>
           	</div>
             <div class="collapsible-body" style="">
               <span>I've got in-depth experience with Procore's portfolio of tools and have worked out new SOPs based on the tools in ways that make sense for more than a dozen Project Teams.
@@ -385,10 +388,10 @@
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
 	  		<ul class="collapsible">
-          <li class="active">
-            <div class="collapsible-header" tabindex="1">
+          <li>
+            <div class="collapsible-header active" tabindex="1">
               <i class="material-icons" style="color: #1976d2">hourglass_empty</i>
-          		If you want to move slowly and methodically...
+          		If you want to move slowly & methodically...<i class="material-icons right-icon">arrow_drop_down</i>
           	</div>
             <div class="collapsible-body" style="display: block;">
               <span>I thrive in contexts where project teams want to take action. With my implementation experience, I can provide the right amount of order without slowing your teams down. Together, we can move smart and fast.
@@ -398,7 +401,7 @@
           <li>
             <div class="collapsible-header" tabindex="2">
               <i class="material-icons" style="color: #1976d2">low_priority</i>
-          		If you want a libary of polished process flow diagrams...
+          		If you want a library of fancy process flow diagrams...<i class="material-icons right-icon">arrow_drop_down</i>
           	</div>
             <div class="collapsible-body" style="">
               <span>I can whiteboard and paper-napkin until we get it right, but I’ll leave the ball in your court to make it pretty and put a bow on it.
@@ -408,7 +411,7 @@
           <li>
             <div class="collapsible-header" tabindex="3">
               <i class="material-icons" style="color: #1976d2">domain_disabled</i>
-          		If you plan to keep me in the office...
+          		If you plan to keep me in the office...<i class="material-icons right-icon">arrow_drop_down</i>
           	</div>
             <div class="collapsible-body" style="">
               <span>Procore is a field application and my experience implementing it is grounded in field-training at job sites. Office management training is one part of the equation, but successful adoption and implementation can’t stop there.
@@ -458,6 +461,7 @@
 
 		});
   });
+
 
 	$(document).ready(function(){
     $('#solution-swipe').tabs({
