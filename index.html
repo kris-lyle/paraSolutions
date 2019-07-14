@@ -24,6 +24,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	
 	<style>
+
+		/* TEXT */
+
 		h1,
 		h2,
 		h3,
@@ -51,6 +54,8 @@
 		h3 {
 			font-size: 2.0rem !important;
 			font-weight: 600;
+			font-style: ;
+			color: #ef6c00;
 		}
 
 		h4 {
@@ -71,20 +76,21 @@
 			font-weight: 500 !important;
 		}
 
-		.container {
-			width: 95%;
-		}
-
 		.right-icon {
 			position: absolute;
 			right: 0;
 		}
 
-		/* NOT USED
+		/* STRUCTURE */
+
+		.container {
+			width: 95%;
+		}
+
 		.top-bot-pad {
 			padding-top: 13%;
 			padding-bottom: 13%;
-		} */
+		}
 
 		/* SEE IF ADDRESSES WIDTH CONSTRAINTS ON MOBILE
 		.row {
@@ -99,26 +105,47 @@
 			min-height: 100vh;
 		}
 
+		.pad-b-5 {
+			padding-bottom: 5%;
+		}
+
+		.pad-b-2 {
+			padding-bottom: 2%;
+		}
+
+		.mar-b-7 {
+			margin-bottom: 7%;
+		}
+
 		/* NOT USED
 		blockquote {
 			border-left-color: #ff6f00;
 		} */
 
-		.hero-bg {
-			background: url("../img/KL_gradient_bg.jpg");
-			background-size: cover;
-			background-position: center;
-			min-height: 85vh;
-			width: 100%;
-			height: auto;
-			position: relative;
-			top: 0;
-			left: 0;
+		/* BUTTON */
+
+		.btn-large {
+			border-color: #ef6c00;
+			border-width: 3px;
+			border-style: solid;
+			border-radius: 3px;
+			background-color: transparent;
 		}
-		
-		.blue-accent {
-			background: #1976d2;
+
+		.btn-large:focus, .btn-large:focus.active {
+  		background-color: #ef6c00;
 		}
+
+		.btn-large a:hover, .btn-large a.active {
+  		color: #fff;
+			background-color: #ef6c00;
+		}
+
+		.btn-large:hover {
+			background-color: #ef6c00;
+		}
+
+		/* TABS */
 
 		.tabs {
 			background-color: transparent !important;
@@ -132,7 +159,6 @@
 			border-style: solid;
 			border-radius: 3px;
 			margin: 10px;
-			background-color: rgba(30, 136, 229, 0.1);
 		}
 
 		.tabs .tab a {
@@ -152,22 +178,43 @@
 			background-color: #ef6c00;
 		}
 
+		/* COLLAPSIBLE */
+
 		.collapsible-header {
 			font-size: 1.3rem !important;
 			position: relative;
 		}
 
+		/*
 		.collapsible-header:focus {
 			border-color: #1976d2;
 			border-width: 3px;
 			border-style: solid;
 			border-radius: 3px;
-		}
+		} */
 
 		.collapsible-body {
 			background-color: #fafafa;
 		}
-		
+
+		/* BACKGROUNDS */
+
+		.hero-bg {
+			background: url("../img/KL_gradient_bg.jpg");
+			background-size: cover;
+			background-position: center;
+			min-height: 85vh;
+			width: 100%;
+			height: auto;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+
+		.blue-accent {
+			background: #1976d2;
+		}
+
 		.dotted {
   		background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   		background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -176,18 +223,6 @@
   		-webkit-background-size: 3px 3px;
   		-moz-background-size: 3px 3px;
   		background-size: 3px 3px;
-		}
-
-		.pad-b-5 {
-			padding-bottom: 5%;
-		}
-
-		.pad-b-2 {
-			padding-bottom: 2%;
-		}
-
-		.mar-b-7 {
-			margin-bottom: 7%;
 		}
 
 	</style>
@@ -229,14 +264,14 @@
 	<div class="container">
 	  <div class="row">
 	  	<div class="col s12 l4">
-	  	  <h5 class="white-text"><i>I specialize in Procore</i></h5>
+	  	  <h5 style="color: #ef6c00"><i>I specialize in Procore</i></h5>
 	  	  <h1 class="white-text">Down-to-earth, knee-to-knee solutions</h1>
 	  	</div>
 		</div>
 		<br>
 	  <div class="row">
 	  	<div class="col s12 l4">
-		  	<a href="#not-your-guy" class="waves-effect waves-light btn-large orange darken-3"><i class="material-icons left">warning</i>I'm not your guy if... </a>
+		  	<a href="#not-your-guy" class="btn-large"><i class="material-icons left">warning</i>I'm not your guy if... </a>
 			</div>
 	  </div>
 	</div>
@@ -245,11 +280,11 @@
 <!--------------- SWIPEABLE TAB SECTION --------------->
 
 <section class="section valign-wrapper blue-accent dotted">
-	<div class="container">
+	<div class="container top-bot-pad">
 		<div class="row">	
 
-			<div class="center col s12 m8 offset-m2 l6 offset-l3">
-				<h1 class="pad-b-5">How can I help?</h1>
+			<div class="col s12 m8 offset-m2 l6 offset-l3">
+				<h1 class="pad-b-5 center white-text">How can I help?</h1>
 				<ul id="solution-swipe" class="tabs">
 					<li class="tab col 3 active">
 						<a href="#selection-swipe">1</a>
@@ -269,12 +304,12 @@
 			<!-- TAB CONTENT -->
 			<div id="selection-swipe" class="col s12 m8 offset-m2 l6 offset-l3">
 				<h3>Software Selection</h3>
-				<div class="flow-text">Procore isn't for everyone, but is it right for you?</div>
-				<p>You probably:</p>
+				<div class="flow-text" style="color: #f5f5f5"><i>Procore isn't for everyone, but is it right for you?</i></div>
+				<p class="white-text">You probably:</p>
 				<ul class="browser-default a">
-					<li>Don't want to waste money on a platform you'll regret</li>
-					<li>Want to avoid being oversold fancy solutions</li>
-					<li>Would appreciate the peace of mind that comes with 3rd party feedback</li>
+					<li class="white-text">Don't want to waste money on a platform you'll regret</li>
+					<li class="white-text">Want to avoid being oversold fancy solutions</li>
+					<li class="white-text">Would appreciate the peace of mind that comes with 3rd party feedback</li>
 				</ul>
 			</div>
 
@@ -318,7 +353,7 @@
 <!--------------- EXPERIENCE SECTION --------------->
 
 <section class="section valign-wrapper" id="experience">
-	<div class="container">
+	<div class="container top-bot-pad">
 	  <h1 class="center pad-b-5">You're in good hands</h1>
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
@@ -375,16 +410,16 @@
 					</li>
 					
         </ul>
+			</div>
+  	</div>
 	</div>
-  </div>
-</div>
 </section>
 
 <!--------------- NOT YOUR GUY SECTION --------------->
 
 <section class="section valign-wrapper grey lighten-4 dotted" id="not-your-guy">
-	<div class="container">
-	  <h1 class="center pad-b-5">But I'm probably not your guy...</h1>
+	<div class="container top-bot-pad">
+	  <h1 class="center pad-b-5">I'm probably not your guy...</h1>
 	  <div class="row">
 	  	<div class="col s12 m8 offset-m2">
 	  		<ul class="collapsible">
