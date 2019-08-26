@@ -241,25 +241,8 @@
 <div class="navbar-fixed">  
   <nav class="grey darken-4">
 		<div class="container">
-			<!-- Dropdown Content 
-			<ul id="dropdown1" class="dropdown-content">
-				<li><a href="#"><i class="material-icons left">extension</i>Fit Assessment</a></li>
-					<li class="divider"></li>
-				<li><a href="#"><i class="material-icons left">merge_type</i>Expedited Implementation</a></li>
-					<li class="divider"></li>
-				<li><a href="#"><i class="material-icons left">refresh</i>Refresh</a></li>
-					<li class="divider"></li>
-				<li><a href="#"><i class="material-icons left">settings</i>Admin (on-demand)</a></li>
-			</ul>
--->
 			<div class="nav-wrapper">
 				<a href="#" class="logo-font center-align">mr.procore</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<!-- Dropdown Trigger 
-					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">layers</i>Services</a></li>
-						<li><a href="#"><i class="material-icons left">verified_user</i>My Experience</a></li>
-					<li><a class="waves-effect waves-light btn"><i class="material-icons left">message</i>Contact</a></li>      
-				</ul> -->
 			</div>
 		</div>
   </nav>
@@ -477,7 +460,7 @@
 		<br>
 		<div class="row">
 			<div class="col s8 offset-s2">
-				<a class="btn-large amber darken-4" href="mailto:kris@krislyle.com">EMAIL ME</a>
+				<a class="btn-large amber darken-4" href="mailto:kris@mrprocore.com">EMAIL ME</a>
 			</div>
 		</div>
 	</div>
@@ -486,7 +469,7 @@
 <footer class="page-footer grey darken-4">
   <div class="footer-copyright">
     <div class="container center">
-    <div>© 2019 Mr.Procore is not affiliated with or endorsed by Procore Technologies, Inc.
+    <div>© 2019 Para Solutions LLC | Mr.Procore is not affiliated with or endorsed by Procore Technologies, Inc.
     </div>
   </div>
 </footer>
@@ -512,45 +495,7 @@
       responsiveThreshold : 1920
     });
   });
-
-// SLOW ANCHOR LINK SCROLLING 
-// Select all links with hashes
-    $('a[href*="#"]')
-		// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-		.click(function(event) {
-			// On-page links
-			if (
-				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-				&& 
-				location.hostname == this.hostname
-			) {
-				// Figure out element to scroll to
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				// Does a scroll target exist?
-				if (target.length) {
-					// Only prevent default if animation is actually gonna happen
-					event.preventDefault();
-					$('html, body').animate({
-						scrollTop: target.offset().top
-					}, 1000, function() {
-						// Callback after animation
-						// Must change focus!
-						var $target = $(target);
-						$target.focus();
-						if ($target.is(":focus")) { // Checking if the target was focused
-							return false;
-						} else {
-							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-							$target.focus(); // Set focus again
-						};
-					});
-				}
-			}
-		});
-		
+					
 </script>
 
 </body>
