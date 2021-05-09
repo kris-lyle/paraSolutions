@@ -254,6 +254,16 @@
   		background-size: 3px 3px;
 		}
 
+		/* carousel */
+
+		.carousel-item {
+			visibility: visible !important;
+		}
+
+		.indicator-item {
+			background-color: #212121 !important;
+		}
+
 	</style>
 </head>
 
@@ -290,8 +300,29 @@
 		</div>
 	</div>
 </section>
-  
 
+<!--------------- CAROUSEL SECTION --------------->
+  
+<section>
+	<div class="carousel carousel-slider center">
+		<div class="carousel-item" href="#one!">
+			<h2>First Panel</h2>
+			<p>This is your first panel</p>
+		</div>
+		<div class="carousel-item" href="#two!">
+			<h2>Second Panel</h2>
+			<p>This is your second panel</p>
+		</div>
+		<div class="carousel-item" href="#three!">
+			<h2>Third Panel</h2>
+			<p>This is your third panel</p>
+		</div>
+		<div class="carousel-item" href="#four!">
+			<h2>Fourth Panel</h2>
+			<p>This is your fourth panel</p>
+		</div>
+	</div>
+</section>
 
 <!--------------- SWIPEABLE TAB SECTION --------------->
 
@@ -502,22 +533,30 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 
 <script>
+	$(document).ready(function(){
+		$('.carousel').carousel();
+	});
+
+	$('.carousel.carousel-slider').carousel({
+		fullWidth: true,
+		indicators: true
+	});
 
 	$var (".dropdown-trigger").dropdown();
 
-  $(document).ready(function(){
-    $('.collapsible').collapsible({
+	$(document).ready(function(){
+		$('.collapsible').collapsible({
 
-		});
-  });
+			});
+	});
 
 
 	$(document).ready(function(){
-    $('#solution-swipe').tabs({
-      swipeable : true,
-      responsiveThreshold : 1920
-    });
-  });
+		$('#solution-swipe').tabs({
+		swipeable : true,
+		responsiveThreshold : 1920
+		});
+	});
 					
 </script>
 
