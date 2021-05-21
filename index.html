@@ -142,6 +142,10 @@
 			padding-bottom: 5%;
 		}
 
+		.pad-t-5 {
+			padding-top: 5%;
+		}
+
 		.pad-b-2 {
 			padding-bottom: 2%;
 		}
@@ -264,12 +268,20 @@
 			visibility: visible !important;
 		}
 		
+		@media #{$small-and-down} {
+			.carousel.carousel-item {
+				height: 650px !important;
+			}
+
+			.carousel.carousel-slider {
+				height: 650px !important;
+			}
+  		}
+
 		.carousel.carousel-item {
-			height: 650px !important;
 		}
 
 		.carousel.carousel-slider {
-			height: 600px !important;
 		}
 
 		.indicator-item {
@@ -281,6 +293,9 @@
 			padding-right: 5vw;
 			padding-left: 5vw;
 		}
+
+
+
 
 	</style>
 </head>
@@ -321,8 +336,9 @@
 
 <!--------------- CAROUSEL SECTION --------------->
   
-<section class="top-bot-pad valign-wrapper">
-	<div class="carousel carousel-slider center">
+<!--<section class="top-bot-pad valign-wrapper">
+	<div class="carousel carousel-slider center" indicators="false">
+		
 		<div class="carousel-item" href="#one!">
 			<div class="row">
 				<div class="col s12 m8 offset-m2">
@@ -382,16 +398,82 @@
 					</div>
 				</div>
 			</div>
+		</div>
+			<div class="left hide-on-small-only">
+				<a href="Previous" class="waves-effect waves-light movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons medium left middle-indicator-text black-text">chevron_left</i></a>
+			</div> 
+			<div class="right hide-on-small-only">
+				<a href="Next" class="waves-effect waves-light moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons medium right middle-indicator-text black-text">chevron_right</i></a>
+			</div>
 		</div>	
-		<div class="left">
-			<a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left middle-indicator-text">chevron_left</i></a>
-		</div>
-		   
-		<div class="right">
-		   <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
-		</div>
-			
 	</div>
+</section> -->
+
+<section class=" yellow pad-t-5 valign-wrapper center">
+	<div class="container">
+		<div class="row">
+		  	<div class="col s12 m8 offset-m2">
+	<div class="carousel carousel-slider ">
+		<div class="carousel-item red" href="#one!">
+					<div class="card-panel">		
+						<img src="./img/logo-duke energy.png" alt="Duke Energy Logo" width="205px;">
+						<br>	
+						<br>				  
+						<span>
+						“Kudos to Kris Lyle and The Rollout Crew for automating our construction workflows and processes. Kris integrated GoFormz construction data-capture with Procore and PowerBI to allow for real-time construction analytics reporting. Kris’ knowledge of the construction industry was crucial in the success of the project. Communication was excellent throughout and Kris and The Rollout Crew worked nights and weekends to meet our aggressive schedule. Looking forward to continuing the relationship on future projects.”
+						</span>
+						<h4>- Les Castro, Principal Project Controls | Special Projects Group</h4>
+					</div>
+		</div>
+		<div class="carousel-item blue" href="#two!">
+					<div class="card-panel">		
+						<img src="./img/logo-fessler and bowman.jpeg" alt="Fessler and Bowman Logo" width="205px;">
+						<br>
+						<br>
+						<span>
+						"Kris created and executed a dynamic Procore training plan that transitioned our team from “early implementation” to “fully functional”. In particular, our field staff walked away with the confidence and know-how they needed to put Procore to use on over 40 active project sites."
+						</span>
+						<h4>- Rob Krueger, VP of Operations</h4>
+					</div>
+		</div>
+		<div class="carousel-item" href="#three!">
+					<div class="card-panel">
+					  	<img src="./img/logo-gl homes.png" alt="GL Homes Logo" width="205px;">
+						<br>
+						<br>
+						<span>
+						“Kris’ expertise has gotten us lightyears ahead of where we would have been had we just tried to roll this out ourselves. Procore is an amazing tool but a consultant helps you unlock the power of the software you’ve purchased.”					  
+						</span>
+						<h4>- Anthony LoFourno, Director of Land Development</h4>
+					</div>
+
+		</div>
+		<div class="carousel-item" href="#four!">
+			
+					<div class="card-panel">
+						<img src="./img/logo-strike.png" alt="Strike Logo" width="205px;">
+						<br>
+						<br>
+					 	<span>
+						"Strike’s EPC group implemented Procore a year ago … Kris Lyle served as our implementation manager where he identified needs and provided application training/support for the various Procore tools that would benefit our project teams. He was a key asset in our implementation process and ultimately paved the way for Procore to be adopted across Strike’s entire organization."					  
+						</span>
+						<h4>- Paul Spadone, Director of EPC</h4>
+					</div>
+		
+	</div>
+	
+	</div>
+	<div class="left hide-on-small-only">
+		<a href="Previous" class="waves-effect waves-light movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons medium left middle-indicator-text black-text">chevron_left</i></a>
+	</div> 
+	<div class="right hide-on-small-only">
+		<a href="Next" class="waves-effect waves-light moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons medium right middle-indicator-text black-text">chevron_right</i></a>
+	</div>
+
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <!--------------- SERVICES --------------->
@@ -574,6 +656,48 @@
 	</div>
 </section>
 
+<section class="section valign-wrapper grey lighten-4 dotted" id="not-your-guy">
+	<div class="container top-bot-pad">
+		<h1 class="center pad-b-5">I'm probably not your guy if...</h1>
+		<div class="row">
+	  		<div class="col s12 m8 offset-m2">
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header active" tabindex="1">
+						<i class="material-icons" style="color: #FF5200">hourglass_empty</i>
+							If you want to move slowly & methodically...<i class="material-icons right-icon">arrow_drop_down</i>
+						</div>
+						<div class="collapsible-body" style="display: block;">
+						<span>I thrive in contexts where project teams want to take action. With my implementation experience, I can provide the right amount of order without slowing your teams down. Together, we can move smart and fast.
+									</span>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header" tabindex="2">
+						<i class="material-icons" style="color: #FF5200">low_priority</i>
+							If you want a library of fancy process flow diagrams...<i class="material-icons right-icon">arrow_drop_down</i>
+						</div>
+						<div class="collapsible-body">
+						<span>I can whiteboard and paper-napkin until we get it right, but I’ll leave the ball in your court to make it pretty and put a bow on it.
+						</span>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header" tabindex="3">
+						<i class="material-icons" style="color: #FF5200">domain_disabled</i>
+							If you plan to keep me in the office...<i class="material-icons right-icon">arrow_drop_down</i>
+						</div>
+						<div class="collapsible-body">
+						<span>Procore is a field application and my experience implementing it is grounded in field-training at job sites. Office training is a necessary part of the equation, but successful adoption and implementation can’t stop there.
+						</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!--------------- CTA --------------->
 
 <section class="section valign-wrapper" id="cta-link">
@@ -608,8 +732,8 @@
 	});
 
 	$('.carousel.carousel-slider').carousel({
-		fullWidth: true,
-		indicators: true
+		fullWidth: false,
+		indicators: false
 	});
 
 	// move next carousel
